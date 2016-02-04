@@ -7,28 +7,9 @@ package com.jcodecraeer.sample;
 
 public class Item {
 
-    private String title;
-    private String description;
-    private String avatar;
 
-    public String getTitle() {
-        return title;
-    }
-    public void setTitle(String title) {
-        this.title = title;
-    }
+        public String aim;
+        public int jt;
+        public String img;
 
-    public String getDescription() {
-        return description;
-    }
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getAvatar() {
-        return avatar;
-    }
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
 }

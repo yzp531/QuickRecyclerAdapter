@@ -1,0 +1,36 @@
+{
+  "code": 1,
+  "codeMessage": "",
+  "data": [
+    {
+      "aim": "https://chaoshi.m.tmall.com/fresh.htm?spm=a3204.7152233.1998123787.2.Ml4mEw&acm=201503129.1003.2.667157&aldid=VfXkZ8df&scm=1003.2.201503129.OTHER_1452122141132_667157&pos=1",
+      "jt":1,
+      "img": "http://img.sanjiang.com/act/20150824/177.slide.jpg"
+    },
+    {
+      "aim": "https://chaoshi.m.tmall.com/liangfan.htm?spm=a3204.7152233.1998123787.3.prB1CW&acm=2015031210.1003.2.442355&aldid=VfXkZ8df&scm=1003.2.2015031210.OTHER_1454055764089_442355&pos=1",
+      "jt":2,
+      "img": "http://img.sanjiang.com/act/20150824/179.slide.jpg"
+    },
+    {
+      "aim": "https://chaoshi.m.tmall.com/liangfan.htm?spm=a3204.7685772.1998301931.2.A0lMi2&acm=201504140.1003.2.596797&aldid=o1Dz5Jb6&scm=1003.2.201504140.OTHER_1451712318695_596797&pos=1",
+      "jt": 3,
+      "img": "http://img.sanjiang.com/act/20150525/water.slide.jpg"
+    },
+    {
+      "aim": "https://pages.tmall.com/wow/chaoshi/act/nhlh2-hd?spm=a3204.7152233.1996846437.2.C9hWYR",
+      "jt": 4,
+      "img": "http://img.sanjiang.com/act/20150824/180.slide.jpg"
+    },
+    {
+      "aim": "https://chaoshi.m.tmall.com/liangfan.htm?spm=a3204.7685772.1998301931.2.A0lMi2&acm=201504140.1003.2.596797&aldid=o1Dz5Jb6&scm=1003.2.201504140.OTHER_1451712318695_596797&pos=1",
+      "jt": 5,
+      "img": "https://img.alicdn.com/imgextra/i3/1955345225/TB2S4srjVXXXXXkXpXXXXXXXXXX_!!1955345225.jpg_760x760Q50.jpg"
+    },
+    {
+      "aim": "https://pages.tmall.com/wow/chaoshi/act/nhlh2-hd?spm=a3204.7152233.1996846437.2.C9hWYR",
+      "jt": 6,
+      "img": "https://img.alicdn.com/imgextra/i4/2042861963/TB2rAUNjVXXXXXyXXXXXXXXXXXX_!!2042861963.jpg_760x760Q50.jpg"
+    }
+  ]
+}

@@ -13,7 +13,7 @@ Add it in your root build.gradle at the end of repositories:
 	dependencies {
 	        compile 'com.github.Aarthas:QuickRecyclerAdapter:1.1'
 	}
-3. 在application里初始化
+3.在application里初始化
 
 		AdapterHelper.setImagehandler(new Imagehandler()
         {

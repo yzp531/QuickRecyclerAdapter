@@ -1,32 +1,38 @@
-# baseadapterhelper
-a handy adapter for ListView and RecyClerview. base on   [JoanZapata's base-adapter-helper](https://github.com/JoanZapata/base-adapter-helper )  but add support for RecyClerview.
 
-##How to use it
+1. Add the JitPack repository to your build file
+Add it in your root build.gradle at the end of repositories:
 
-```java
-mAdapter = new QuickAdapter<Item>(this, R.layout.item_demo){
-    @Override
-    protected void convert(BaseAdapterHelper helper, Item item) {
-        helper.getTextView(R.id.title).setText(item.getTitle());
-        helper.getTextView(R.id.description).setText(item.getDescription());
-        Picasso.with(context).load(item.getAvatar()).into(helper.getImageView(R.id.avatar));
-    }
-};
-mRecyclerView.setAdapter(mAdapter);
-```
-very simple and clean.
+	allprojects {
+		repositories {
+			...
+			maven { url "https://jitpack.io" }
+		}
+	}
+2. Add the dependency
 
-example code above show how to set the value of TextView and ImageView,infact if you read the code of the lib,you can find there is another method to solve Button
-```java
-  public Button getButton(int viewId)
-```
-***so how can I set the value of(or handle) other type of views?***
+	dependencies {
+	        compile 'com.github.Aarthas:QuickRecyclerAdapter:1.1'
+	}
+3. 在application里初始化
+		AdapterHelper.setImagehandler(new Imagehandler()
+        {
+            @Override
+            public void display(Context context, ImageView view, String imageUrl)
+            {
+                Picasso.with(view.getContext()).load(imageUrl).into(view);
+            }
+        });
 
-for example a custom circle ImageView from the third party :CircleImageView.
-we can use getView method  
-```java
- CircleImageView avatar = (CircleImageView)helper.getView(R.id.avatar);
- Picasso.with(context).load(item.getAvatar()).into(avatar);
-```
-##other
-[an article about this project](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0809/3277.html ) 
+4.使用方式：例子里有三种使用方式
+
+        推荐方式3：这样一个adapter就设置完成了，就.行代码
+         mAdapter2 = new QuickRecyclerAdapter<Item,ItemAdapterHelper>(context, R.layout.item_sale)
+		{
+			@Override
+			public AdapterHelper getAdapterHelper(View view)
+			{
+				return new ItemAdapterHelper(view);
+			}
+		};
+
+		mRecyclerView.setAdapter(mAdapter2);

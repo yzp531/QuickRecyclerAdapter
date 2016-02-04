@@ -1,5 +1,5 @@
 
-1. Add the JitPack repository to your build file
+1.Add the JitPack repository to your build file
 Add it in your root build.gradle at the end of repositories:
 
 	allprojects {
@@ -8,11 +8,13 @@ Add it in your root build.gradle at the end of repositories:
 			maven { url "https://jitpack.io" }
 		}
 	}
-2. Add the dependency
+
+2.Add the dependency
 
 	dependencies {
 	        compile 'com.github.Aarthas:QuickRecyclerAdapter:1.1'
 	}
+	
 3.在application里初始化
 
 		AdapterHelper.setImagehandler(new Imagehandler()
